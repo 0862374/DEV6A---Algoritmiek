@@ -10,8 +10,15 @@ public class Klant {
 	private String plaats;
 	private String emailadres;
 	
-	public Klant(){
-		
+	public Klant(int klantId, String achternaam, String tussenvoegsel, String voornaam, int leeftijd, boolean IsMan, String plaats, String emailadres){
+		this.klantId = klantId;
+		this.achternaam = achternaam;
+		this.tussenvoegsel = tussenvoegsel;
+		this.voornaam = voornaam;
+		this.leeftijd = leeftijd;
+		this.IsMan = IsMan;
+		this.plaats = plaats;
+		this.emailadres = emailadres;
 	}
 	
 	public int getKlantId() {
