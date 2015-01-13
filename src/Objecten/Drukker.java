@@ -12,6 +12,7 @@ public class Drukker {
 	public void nieuweBestelling(Bestelling bestelling) {
 		bestelling.setDuur(new Random().nextInt(20000));
 		bestellingen.add(bestelling);
+		
 
 	}
 
@@ -29,6 +30,7 @@ public class Drukker {
 			if (bestellingen.peek() != null) {
 				bestellingen.element().setDadelijk(true);
 			}
+			
 		}
 
 		if (bestellingInVerwerking != null) {

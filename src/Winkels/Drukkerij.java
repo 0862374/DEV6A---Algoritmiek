@@ -19,16 +19,19 @@ public class Drukkerij {
 	public void nieuweBestelling(Bestelling bestelling){
 		
 			drukkerEen.nieuweBestelling(bestelling);
-		
-		//TODO checken of de klant al bestaat
-		//klanten.add(bestelling.getKlant());
+			if (klanten != bestelling.getKlant()) {
+				klanten.add(bestelling.getKlant());
+				updateBestelling();
+			}
 	}
-	
 	
 	
 	public void updateBestelling(){
 		drukkerEen.updateBestelling();
+		System.out.println("Update Bestelling");
 	}
-	
+
+
+
 		
 }
